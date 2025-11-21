@@ -1,0 +1,73 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ heroTitle }}</h1>
+      <p>{{ heroDescription }}</p>
+      <div class="hero-buttons">
+        <a href="#historia" class="btn btn-primary">Conocer Historia</a>
+        <a href="#heroes" class="btn btn-secondary">Ver Héroes</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/sanmartin.jpg" alt="Mapa de la Independencia Latinoamericana">
+    </div>
+  </div>
+</section>
+
+<section id="historia" class="history-section">
+  <div class="container">
+    <h2>Contexto Histórico</h2>
+    <div class="history-content">
+      <div class="history-text">
+        <p>Las guerras de independencia hispanoamericanas fueron una serie de conflictos armados que se desarrollaron en el continente americano a principios del siglo XIX todo empezo por que los abitantes de estas tierras estban cansados de los abusos del poder español por ejemplo asltis impuestos,desigualdades ,falta de libertad y gobiernos que solo benificiaban alos españoles nacidos en europa  EL primer gran cambio ocurrio cuando España quedo debilitada por las guerras  en europa ,especialmente cuando Napoleon invadios españa al ver que españa ya no podia controlar bien sus colonias surgieros ideas libertad,autonomia y goberno propio En america aparesieron lideres que creian que debiamos ser independientes entre ellos sobrebibieron .</p>
+      </div>
+      <div class="history-image">
+        <img src="https://via.placeholder.com/500x350/2F4F4F/FFFFFF?text=Batalla+Independencia" 
+          alt="Batalla de la Independencia">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="heroes" class="heroes-section">
+  <div class="container">
+    <h2>Héroes de la Independencia</h2>
+    <div class="heroes-grid">
+      <div *ngFor="let heroe of heroes" class="hero-card">
+        <div class="hero-image">
+          <img [src]="heroe.imagen" [alt]="heroe.nombre">
+        </div>
+        <div class="hero-content">
+          <h3>{{ heroe.nombre }}</h3>
+          <span class="hero-country">{{ heroe.pais }}</span>
+          <p class="hero-achievement">{{ heroe.logro }}</p>
+          <p class="hero-description">{{ heroe.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="causas" class="causes-section">
+  <div class="container">
+    <h2>Causas de la Independencia</h2>
+    <div class="causes-grid">
+      <div *ngFor="let causa of causas" class="cause-card">
+        <div class="cause-icon">{{ causa.icono }}</div>
+        <h3>{{ causa.titulo }}</h3>
+        <p>{{ causa.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="consecuencias" class="consequences-section">
+  <div class="container">
+    <h2>Consecuencias</h2>
+    <div class="consequences-list">
+      <ul>
+        <li *ngFor="let consecuencia of consecuencias">{{ consecuencia }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>
+        <a routerLink="/" class="logo-link">
+          {{ title }}
+        </a>
+      </h1>
+    </div>
+    
+    <ul class="nav-menu">
+      <li *ngFor="let item of menuItems">
+        <a [routerLink]="item.path" class="nav-link">
+          {{ item.label }}
+        </a>
+      </li>
+      
+      <li *ngFor="let anchor of anchorLinks">
+        <a [href]="'#' + anchor.anchor" class="nav-link">
+          {{ anchor.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

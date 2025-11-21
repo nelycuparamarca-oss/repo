@@ -1,0 +1,46 @@
+<p>paises.component works!</p>
+<section class="paises-hero">
+  <div class="container">
+    <h1>Países Latinoamericanos</h1>
+    <p>Descubre cómo cada nación logró su independencia y los héroes que hicieron historia</p>
+  </div>
+</section>
+
+<section class="paises-grid-section">
+  <div class="container">
+    <div class="paises-info">
+      <h2>Procesos de Independencia</h2>
+      <p>La independencia de América Latina fue un proceso complejo que se desarrolló entre 1809 y 1825, 
+         resultando en la creación de nuevas repúblicas soberanas.</p>
+    </div>
+    
+    <div class="paises-grid">
+      <div *ngFor="let pais of paises" class="pais-card">
+        <div class="pais-header">
+          <span class="bandera">{{ pais.bandera }}</span>
+          <h3>{{ pais.nombre }}</h3>
+        </div>
+        
+        <div class="pais-image">
+          <img [src]="pais.imagen" [alt]="'Independencia de ' + pais.nombre">
+        </div>
+        
+        <div class="pais-info">
+          <div class="info-item">
+            <strong>Fecha de Independencia:</strong>
+            <span>{{ pais.fecha }}</span>
+          </div>
+          
+          <div class="info-item">
+            <strong>Líder Principal:</strong>
+            <span>{{ pais.lider }}</span>
+          </div>
+          
+          <div class="pais-descripcion">
+            {{ pais.descripcion }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
