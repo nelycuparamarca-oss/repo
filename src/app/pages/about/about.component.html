@@ -1,61 +1,58 @@
 <section class="about-hero">
-  <div class="container">
+<div class="container">
     <h1>{{ proyectoInfo.titulo }}</h1>
     <p>{{ proyectoInfo.descripcion }}</p>
-  </div>
+</div>
 </section>
 
 <section class="about-content">
-  <div class="container">
-    <!-- Información del Proyecto -->
+<div class="container">
     <div class="project-section">
-      <h2>Objetivo del Proyecto</h2>
-      <p>{{ proyectoInfo.objetivo }}</p>
+    <h2>Objetivo del Proyecto</h2>
+    <p>{{ proyectoInfo.objetivo }}</p>
     </div>
 
-    <!-- Características -->
+
     <div class="features-section">
-      <h2>Características Principales</h2>
-      <div class="features-grid">
+    <h2>Características Principales</h2>
+    <div class="features-grid">
         <div *ngFor="let caracteristica of proyectoInfo.caracteristicas" class="feature-card">
-          <div class="feature-icon">✓</div>
-          <p>{{ caracteristica }}</p>
+        <div class="feature-icon">✓</div>
+        <p>{{ caracteristica }}</p>
         </div>
-      </div>
+    </div>
     </div>
 
     <div class="about-grid">
-      <!-- Tecnologías -->
-      <div class="tech-section">
+
+    <div class="tech-section">
         <h2>Tecnologías Utilizadas</h2>
         <div class="tech-list">
           <div *ngFor="let tech of tecnologias" class="tech-item">
             <span class="tech-name">{{ tech.nombre }}</span>
             <span class="tech-desc">{{ tech.descripcion }}</span>
-          </div>
         </div>
-      </div>
-      
-      <!-- Información del Estudiante -->
-      <div class="student-section">
+        </div>
+    </div>
+    
+
+    <div class="student-section">
         <h2>Información Académica</h2>
         <div class="student-card">
-          <div class="student-info">
+        <div class="student-info">
             <h3>{{ estudianteInfo.nombre }}</h3>
             <p><strong>Curso:</strong> {{ estudianteInfo.curso }}</p>
             <p><strong>Institución:</strong> {{ estudianteInfo.institucion }}</p>
             <p><strong>Propósito:</strong> {{ estudianteInfo.proposito }}</p>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
     </div>
 
-    <!-- Imagen Representativa -->
     <div class="project-image-section">
-      <div class="project-image">
-        <img src="https://via.placeholder.com/800x400/2C3E50/FFFFFF?text=Proyecto+Educativo+Independencia+América+Latina" 
-             alt="Proyecto Educativo Independencia América Latina">
-      </div>
+    <div class="project-image">
+        <img src="assets/images/sanmartin.jpg" alt="Proyecto Educativo Independencia América Latina">
     </div>
-  </div>
+    </div>
+</div>
 </section>

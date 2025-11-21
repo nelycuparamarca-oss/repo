@@ -32,6 +32,6 @@ export class AboutComponent {
     nombre: 'Nely Cupara Marca',
     curso: 'Diseño y Programación Grafica',
     institucion: 'Ingenieria de Sistemas - UATF',
-    
+    proposito: 'Aprender y presentar un proyecto educativo sobre la independencia latinoamericana'
   };
 }
