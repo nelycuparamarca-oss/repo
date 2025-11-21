@@ -44,7 +44,7 @@ export class PaisesComponent {
       nombre: 'Chile',
       fecha: '12 de Febrero, 1818',
       lider: 'Bernardo OHiggins',
-      imagen: 'C:\Users\hp\Desktop\2parcial\independencia-latina\src\assets\CHILE.webp',
+      imagen: 'https://via.placeholder.com/400x250/0039A6/FFFFFF?text=Chile+Independencia',
       bandera: '🇨🇱', 
       descripcion: 'Lograda tras la victoria en la Batalla de Maipú dirigida por San Martín y OHiggins'
     },
